@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Ivoirien</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function() {
+            alert("Bienvenue sur le site L'Ivoirien! Découvrez nos dernières actualités.");
+            typeWriter();
+            setInterval(typeWriter, 5000); // Refresh every 5 seconds
+            loadSection('accueil');
+        };
+
+        function typeWriter() {
+            let title = document.getElementById('dynamic-title');
+            let fullTitle = "L'Ivoirien";
+            let i = 0;
+            title.innerHTML = ''; // Clear the title first
+            function write() {
+                if (i < fullTitle.length) {
+                    title.innerHTML += fullTitle.charAt(i);
+                    i++;
+                    setTimeout(write, 150);
+                } else {
+                    setTimeout(() => {
+                        title.innerHTML = ''; // Efface après avoir écrit
+                    }, 2000);
+                }
+            }
+            write();
+        }
+
+        function loadSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function toggleMenu() {
+            let nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="background-image"></div>
+    <header class="header">
+        <h1 id="dynamic-title"></h1>
+        <!-- Texte défilant dans la barre du menu -->
+        <div class="marquee">
+            <p>Information défilante 1 - Actualités à ne pas manquer.</p>
+        </div>
+        <nav class="nav">
+            <a href="#accueil" onclick="loadSection('accueil')">Accueil</a>
+            <a href="#politique" onclick="loadSection('politique')">Politique</a>
+            <a href="#religion" onclick="loadSection('religion')">Religion</a>
+            <a href="#sport" onclick="loadSection('sport')">Sport</a>
+            <a href="#societe" onclick="loadSection('societe')">Société</a>
+            <a href="#faits-divers" onclick="loadSection('faits-divers')">Faits Divers</a>
+            <a href="#divertissement" onclick="loadSection('divertissement')">Divertissement</a>
+        </nav>
+        <!-- Icônes des réseaux sociaux -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+    <main class="content">
+        <section id="accueil" class="section">
+            <!-- Aperçu du journal -->
+            <div class="news-preview">
+                <h2>Les grandes actualités du jour</h2>
+                <div class="news-item">Titre de l'article 1 - brève description</div>
+                <div class="news-item">Titre de l'article 2 - brève description</div>
+                <div class="news-item">Titre de l'article 3 - brève description</div>
+                <div class="news-item">Titre de l'article 4 - brève description</div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>L'Ivoirien - Site D'actualités. Tous droits Réservés.</p>
+    </footer>
+</body>
+</html>
