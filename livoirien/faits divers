@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faits Divers - Livoirien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Faits Divers</h1>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="politique.html">Politique</a>
+            <a href="religion.html">Religion</a>
+            <a href="sport.html">Sport</a>
+            <a href="societe.html">Société</a>
+            <a href="divertissement.html">Divertissement</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="box">
+            <h2>Actualités Diverses</h2>
+            <p>Les nouvelles inattendues et diverses...</p>
+        </section>
+
+        <!-- Section Faits Divers -->
+        <section class="box">
+            <h2>Fait Divers : Une fusillade éclate dans un quartier d'Abidjan</h2>
+            <p>Le quartier populaire de Yopougon, à Abidjan, a été le théâtre d'une fusillade en pleine journée hier.
+                Selon les premiers éléments de l'enquête, deux gangs rivaux se sont affrontés violemment dans la rue,
+                semant la panique parmi les habitants. Les forces de l'ordre ont rapidement été dépêchées sur place pour
+                rétablir le calme.</p>
+
+            <p>Des témoins sur place rapportent que plusieurs coups de feu ont été tirés, créant une scène de chaos dans
+                les environs. Les riverains ont dû se réfugier à l'intérieur de leurs maisons tandis que des échoppes
+                ont fermé précipitamment. "Nous avons entendu des tirs, et tout le monde a commencé à courir. C'était
+                effrayant", témoigne un habitant.</p>
+
+            <h3>Bilan provisoire</h3>
+            <p>Le bilan provisoire fait état de trois blessés graves, tous transportés d'urgence à l'hôpital le plus
+                proche. Aucune perte en vie humaine n'a été rapportée pour l'instant, mais la police continue de
+                quadriller la zone pour rechercher les suspects, qui auraient pris la fuite après l'incident.</p>
+
+            <h3>Réactions des autorités</h3>
+            <p>Le maire de Yopougon, ainsi que les autorités locales, ont fermement condamné cet acte de violence. Ils
+                ont appelé au calme tout en promettant de renforcer la sécurité dans le quartier. "Nous ne pouvons
+                tolérer de tels agissements dans nos quartiers. La sécurité de nos citoyens est une priorité", a déclaré
+                le maire dans un communiqué de presse.</p>
+
+            <p>L'incident a relancé le débat sur l'insécurité dans certains quartiers d'Abidjan, où les affrontements
+                entre bandes rivales deviennent de plus en plus fréquents.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>L'Ivoirien - Site D'actualités. Tous droits Réservés.</p>
+    </footer>
+</body>
+
+</html>

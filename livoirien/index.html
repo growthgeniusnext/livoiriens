@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Ivoirien - Actualités</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function () {
+            alert("Bienvenue sur le site L'Ivoirien! Découvrez nos dernières actualités.");
+            typeWriter();
+            setInterval(typeWriter, 5000); // Répète l'animation du titre toutes les 5 secondes
+            loadSection('accueil'); // Charge la section 'accueil' au chargement de la page
+        };
+
+        function typeWriter() {
+            let title = document.getElementById('dynamic-title');
+            let fullTitle = "L'Ivoirien";
+            let i = 0;
+            title.innerHTML = ''; // Efface d'abord le titre
+            function write() {
+                if (i < fullTitle.length) {
+                    title.innerHTML += fullTitle.charAt(i);
+                    i++;
+                    setTimeout(write, 150);
+                } else {
+                    setTimeout(() => {
+                        title.innerHTML = ''; // Efface le texte après 2 secondes
+                    }, 2000);
+                }
+            }
+            write();
+        }
+
+        function loadSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Cache toutes les sections
+            });
+            document.getElementById(sectionId).style.display = 'block'; // Affiche la section sélectionnée
+        }
+
+        function toggleMenu() {
+            let nav = document.querySelector('.nav');
+            nav.classList.toggle('active'); // Affiche/Cache le menu pour les petits écrans
+        }
+    </script>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <header class="header">
+        <h1 id="dynamic-title"></h1>
+        <!-- Texte défilant dans la barre du menu -->
+        <div class="marquee">
+            <p>Education: La FESCI a été Dissoute - Grève dans le secteur de l'enseignement.</p>
+        </div>
+        <nav class="nav">
+            <a href="#accueil" onclick="loadSection('accueil')">Accueil</a>
+            <a href="#politique" onclick="loadSection('politique')">Politique</a>
+            <a href="#religion" onclick="loadSection('religion')">Religion</a>
+            <a href="#sport" onclick="loadSection('sport')">Sport</a>
+            <a href="#economie" onclick="loadSection('economie')">Économie</a>
+            <a href="#faits-divers" onclick="loadSection('faits-divers')">Faits Divers</a>
+            <a href="#divertissement" onclick="loadSection('divertissement')">Divertissement</a>
+        </nav>
+        <!-- Icônes des réseaux sociaux -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+
+    <main class="content">
+        <section id="accueil" class="section">
+            <h2>Les grandes actualités du jour</h2>
+            <div class="news-preview">
+                <div class="news-item">Les grands défis de l'économie - projection pour 2025</div>
+                <div class="news-item">Cacao Ivoirien - Entre richesse et défis</div>
+                <div class="news-item">Le métro que tout le monde attend - Le Métro D'Abidjan</div>
+                <div class="news-item">La Côte d'Ivoire se voit comme un hub digital africain - Innovation numérique en
+                    Côte d'Ivoire</div>
+            </div>
+        </section>
+
+        <section id="politique" class="section" style="display:none;">
+            <h2>Politique : Les dernières réformes en Côte d'Ivoire</h2>
+            <p>Le gouvernement ivoirien vient de lancer une nouvelle série de réformes politiques pour assurer la
+                stabilité et le développement...</p>
+        </section>
+
+        <section id="religion" class="section" style="display:none;">
+            <h2>Religion : L'importance de la tolérance religieuse en Côte d'Ivoire</h2>
+            <p>Dans un pays où la diversité religieuse est importante, les leaders religieux appellent à plus de
+                tolérance et de dialogue interconfessionnel...</p>
+        </section>
+
+        <section id="sport" class="section" style="display:none;">
+            <h2>Sport : La Côte d'Ivoire aux JO de Paris 2024</h2>
+            <p>Les athlètes ivoiriens se préparent pour les Jeux olympiques de 2024 avec de grandes ambitions...</p>
+        </section>
+
+        <section id="economie" class="section" style="display:none;">
+            <h2>Les grands défis de l'économie ivoirienne en 2024</h2>
+            <p>L'année 2024 promet d'être décisive pour l'économie ivoirienne avec des défis dans l'agriculture, les
+                infrastructures et le numérique...</p>
+        </section>
+
+        <section id="faits-divers" class="section" style="display:none;">
+            <h2>Faits Divers : Incidents récents et reportages exclusifs</h2>
+            <p>Les faits divers marquants de la semaine, des incidents de sécurité aux accidents de la circulation...
+            </p>
+        </section>
+
+        <section id="divertissement" class="section" style="display:none;">
+            <h2>Divertissement : Les événements culturels à ne pas manquer en 2024</h2>
+            <p>Découvrez les événements culturels à venir en Côte d'Ivoire, notamment le Festival International du Film
+                d'Abidjan et le Salon du Livre...</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>L'Ivoirien - Site d'actualités. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

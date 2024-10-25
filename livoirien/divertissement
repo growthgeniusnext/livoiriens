@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divertissement - Livoirien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Divertissement</h1>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="politique.html">Politique</a>
+            <a href="religion.html">Religion</a>
+            <a href="sport.html">Sport</a>
+            <a href="societe.html">Société</a>
+            <a href="faits-divers.html">Faits Divers</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="box">
+            <h2>Actualités Divertissement</h2>
+            <p>Divertissements et actualités de la culture populaire...</p>
+        </section>
+
+        <!-- Section Divertissement -->
+        <section class="box">
+            <h2>Divertissement : Les Événements Culturels à Venir en Côte d'Ivoire</h2>
+            <p>La scène culturelle ivoirienne s'apprête à accueillir une série d'événements majeurs dans les prochains
+                mois, mettant en lumière la richesse et la diversité du divertissement en Côte d'Ivoire.</p>
+
+            <h3>Le Festival International du Film d'Abidjan (FICA) 2024</h3>
+            <p>Le FICA revient pour sa nouvelle édition en mars 2024, avec une sélection de films provenant de toute
+                l'Afrique et du monde entier. Ce festival mettra à l'honneur des réalisateurs émergents et confirmés,
+                offrant une plateforme pour des discussions et des échanges autour du cinéma africain. Les amateurs de
+                septième art peuvent s'attendre à des projections de films, des ateliers de réalisation, et des
+                masterclasses animées par des experts du cinéma.</p>
+
+            <h3>Salon International du Livre d'Abidjan (SILA) 2024</h3>
+            <p>Prévu pour avril 2024, le SILA est l'un des plus grands rendez-vous littéraires d'Afrique francophone.
+                Cet événement rassemble des écrivains, éditeurs, et passionnés de la littérature pour une célébration du
+                livre et de la lecture. Des conférences, des dédicaces, et des ateliers sont programmés pour encourager
+                l'amour des lettres chez les jeunes et les adultes. Cette édition mettra particulièrement l'accent sur
+                la littérature jeunesse et les enjeux de l'édition numérique en Afrique.</p>
+
+            <h3>Le Festival des Grillades d'Abidjan 2024</h3>
+            <p>Amateurs de bonne cuisine, préparez-vous pour le Festival des Grillades, un événement culinaire
+                incontournable en septembre 2024. Avec des stands de grillades venus de toute la Côte d'Ivoire et même
+                au-delà, ce festival célèbre les saveurs authentiques de la cuisine ivoirienne. En plus des
+                dégustations, le festival proposera des concerts, des compétitions de cuisine, et des démonstrations par
+                des chefs renommés. Un rendez-vous à ne pas manquer pour les gourmands et gourmets !</p>
+
+            <h3>Les Nuits Abidjanaises 2024</h3>
+            <p>Enfin, en juillet 2024, les Nuits Abidjanaises proposeront des concerts en plein air réunissant des
+                artistes locaux et internationaux. Ce festival de musique se veut une plateforme pour découvrir de
+                nouveaux talents tout en profitant des performances d'artistes confirmés. La diversité musicale sera au
+                rendez-vous, avec des genres allant de l'Afrobeat à la musique traditionnelle ivoirienne.</p>
+
+            <p>Avec ces événements majeurs, la Côte d'Ivoire continue de se positionner comme un hub culturel en Afrique
+                de l'Ouest. Qu'il s'agisse de cinéma, de littérature, de gastronomie ou de musique, les prochains mois
+                s'annoncent riches en divertissements pour tous les goûts.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>L'Ivoirien - Site D'actualités. Tous droits Réservés.</p>
+    </footer>
+</body>
+
+</html>

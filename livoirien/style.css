@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    position: relative;
+}
+
+#dynamic-title {
+    color: #ffffff;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffcc00;
+}
+
+/* Texte défilant dans la barre de menu */
+.marquee {
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    color: #ffcc00;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.marquee p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: -100%;
+    }
+}
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #1a1a1a;
+        padding: 20px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #dynamic-title {
+        font-size: 2.5em;
+    }
+}
+
+.content {
+    padding: 20px;
+}
+
+.section {
+    display: none;
+    padding: 20px;
+}
+
+.news-preview {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-preview h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.news-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.footer p {
+    margin: 0;
+}

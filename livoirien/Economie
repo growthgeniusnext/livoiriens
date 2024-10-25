@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Économie - Livoirien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Économie</h1>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="politique.html">Politique</a>
+            <a href="religion.html">Religion</a>
+            <a href="sport.html">Sport</a>
+            <a href="societe.html">Société</a>
+            <a href="faits-divers.html">Faits Divers</a>
+            <a href="divertissement.html">Divertissement</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="box">
+            <h2>Actualités Économiques</h2>
+            <p>Les dernières nouvelles économiques de la Côte d'Ivoire...</p>
+        </section>
+
+        <!-- Section Économie -->
+        <section class="box">
+            <h2>Économie : La Côte d'Ivoire enregistre une croissance économique stable malgré les défis</h2>
+            <p>La Côte d'Ivoire continue de maintenir un taux de croissance économique impressionnant, avec une hausse
+                de 6,5 % prévue pour cette année, malgré les défis mondiaux liés aux fluctuations des prix des matières
+                premières et à l'inflation. Ce taux de croissance solide place le pays parmi les économies les plus
+                dynamiques de la région ouest-africaine.</p>
+
+            <p>Selon les analystes financiers, cette performance est en grande partie attribuée aux investissements
+                massifs dans les infrastructures, à l'industrialisation croissante, ainsi qu'à une bonne gestion
+                macroéconomique. Le secteur agricole, notamment la production de cacao et de café, continue de jouer un
+                rôle majeur, bien que le gouvernement cherche à diversifier l'économie.</p>
+
+            <h3>Investissements étrangers en hausse</h3>
+            <p>Les investissements directs étrangers (IDE) en Côte d'Ivoire connaissent également une hausse notable,
+                surtout dans les secteurs de l'énergie, des télécommunications, et de l'agro-industrie. Le pays a
+                récemment signé plusieurs accords de coopération avec des partenaires européens et asiatiques pour
+                soutenir le développement de nouvelles infrastructures énergétiques, visant à renforcer la capacité
+                électrique du pays.</p>
+
+            <p>De nombreuses entreprises internationales choisissent d'investir en Côte d'Ivoire en raison de son climat
+                des affaires de plus en plus attractif et de la stabilité politique relative. "Nous voyons un intérêt
+                croissant des investisseurs, notamment pour les projets d'infrastructure et les nouvelles technologies",
+                a déclaré un représentant du ministère de l'Économie.</p>
+
+            <h3>Défis à surmonter</h3>
+            <p>Malgré ces progrès, le pays fait face à certains défis. L'inflation mondiale et la hausse des coûts des
+                importations ont exercé une pression sur les consommateurs locaux. De plus, la montée des prix du
+                carburant et des denrées alimentaires de base a créé un mécontentement social, obligeant le gouvernement
+                à envisager de nouvelles mesures de soutien.</p>
+
+            <p>Le gouvernement ivoirien reste cependant optimiste quant à l'avenir, avec des projets ambitieux pour
+                2025, visant à faire de la Côte d'Ivoire un hub économique majeur dans la région.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>L'Ivoirien - Site D'actualités. Tous droits Réservés.</p>
+    </footer>
+</body>
+
+</html>
+            <p>La communauté chrétienne d'Abidjan a récemment organisé une grande marche pour la paix dans la ville. Des
+                milliers de fidèles de différentes confessions chrétiennes se sont réunis pour prier ensemble et appeler
+                à la fin des tensions sociales qui secouent certaines parties du pays. Sous le thème "Unis dans la foi,
+                unis pour la paix", cet événement a marqué une forte volonté de la part des leaders religieux de
+                promouvoir l'unité nationale.</p>
+
+            <p>Les responsables des principales églises d'Abidjan, y compris l'Église Catholique, l'Église Méthodiste,
+                et plusieurs communautés évangéliques, ont prononcé des discours en appelant les citoyens à la tolérance
+                et à la réconciliation. "Nous devons nous rappeler que nous sommes tous frères et sœurs, indépendamment
+                de nos différences politiques ou ethniques", a déclaré le Père Jean-Marie, représentant de l'Église
+                Catholique.</p>
+
+            <h3>Un message de réconciliation</h3>
+            <p>Les participants à la marche ont brandi des pancartes portant des messages de paix et de réconciliation.
+                "Notre pays a besoin de se réconcilier et de guérir ses blessures. La foi peut jouer un rôle crucial
+                dans ce processus", a déclaré l'un des fidèles présents. La marche s'est déroulée dans une ambiance
+                pacifique, et de nombreux jeunes ont pris part à l'événement, témoignant de leur engagement pour un
+                avenir sans violence.</p>
+
+            <h3>Réactions des autorités religieuses et civiles</h3>
+            <p>Les autorités religieuses ont salué la mobilisation massive des fidèles et espèrent que ce message de
+                paix sera entendu au-delà des cercles religieux. Le gouvernement ivoirien a également exprimé son
+                soutien à cette initiative. "La paix est une responsabilité partagée, et nous sommes heureux de voir la
+                communauté religieuse jouer un rôle actif pour la promouvoir", a déclaré un porte-parole du
+                gouvernement.</p>
+
+            <p>Avec l'espoir que cette marche inspire d'autres initiatives similaires, la communauté chrétienne
+                d'Abidjan s'engage à poursuivre ses efforts pour la paix et l'harmonie sociale dans tout le pays.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>L'Ivoirien - Site D'actualités. Tous droits Réservés.</p>
+    </footer>
+</body>
+
+</html>
